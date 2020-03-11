@@ -15,6 +15,8 @@ if(prt)
 {
 prt->parent = parent;
 prt->n = value;
+prt->right = NULL;
+prt->left = NULL;
 }
 else
 {
