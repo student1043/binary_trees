@@ -24,10 +24,10 @@ return (NULL);
 prt->parent = parent;
 prt->n = value;
 prt->right = NULL;
-prt->left = parent->left;
 
 if (parent->left)
 {
+prt->left = parent->left;
 temp->left = parent->left;
 parent = prt;
 parent->left = temp->left;
