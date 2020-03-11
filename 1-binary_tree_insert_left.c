@@ -26,7 +26,7 @@ prt->right = NULL;
 
 if (parent->left)
 {
-prt->left->parent = prt
+prt->left->parent = prt;
 }
 else
 {
