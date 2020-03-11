@@ -29,8 +29,8 @@ prt->left = parent->left;
 if (parent->left)
 {
 temp->left = parent->left;
-prt->left = parent;
-prt->left->left = temp->left;
+parent = prt;
+parent->left = temp->left;
 }
 else
 {
