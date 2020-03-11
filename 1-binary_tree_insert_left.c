@@ -17,16 +17,18 @@ if (!parent)
 {
 return (NULL);
 }
-if (prt)
+if (!prt)
 {
+return (NULL);
+}
 prt->parent = parent;
 prt->n = value;
 prt->right = NULL;
 prt->left = parent->left;
-}
-if (prt->left)
+
+if (parent->left)
 {
-temp->left = prt->left;
+temp->left = parent->left;
 prt->left = parent;
 prt->left->left = temp->left;
 }
