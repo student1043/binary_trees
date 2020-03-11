@@ -23,14 +23,13 @@ return (NULL);
 }
 prt->parent = parent;
 prt->n = value;
+prt->left = parent->left;
 prt->right = NULL;
 
 if (parent->left)
 {
-prt->left = parent->left;
 temp->left = parent->left;
-parent = prt;
-parent->left = temp->left;
+parent->left = temp;
 }
 else
 {
