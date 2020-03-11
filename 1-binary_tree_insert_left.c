@@ -28,9 +28,6 @@ if (parent->left)
 {
 prt->left->parent = prt;
 }
-else
-{
-return (NULL);
-}
+parent->left = prt;
 return (prt);
 }
