@@ -2,12 +2,12 @@
 #include "binary_trees.h"
 
 /**
- * binary_tree_insert_left - Entry point
+ * binary_tree_insert_right - Entry point
  * @parent: parent node
  * @value: value of the node
  * Return: Always 0 (Success)
  */
-binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value)
+binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value)
 {
 binary_tree_t *prt;
 if (!parent)
