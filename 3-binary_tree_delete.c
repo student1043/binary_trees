@@ -2,9 +2,8 @@
 #include "binary_trees.h"
 
 /**
- * binary_tree_insert_left - Entry point
- * @parent: parent node
- * @value: value of the node
+ * binary_tree_delete - Entry point
+ * @tree: tree
  * Return: Always 0 (Success)
  */
 void binary_tree_delete(binary_tree_t *tree)
