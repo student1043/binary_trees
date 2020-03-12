@@ -13,14 +13,14 @@ if (!tree)
 {
 return (0);
 }
+if (tree->parent)
+{
 rightdep = binary_tree_depth(tree->right);
 leftdep = binary_tree_depth(tree->left);
+}
 if (leftdep > rightdep)
 {
 return (leftdep + 1);
 }
-else
-{
 return (rightdep + 1);
-}
 }
