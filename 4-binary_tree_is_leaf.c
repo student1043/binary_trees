@@ -24,5 +24,5 @@ if (node->right)
 {
 binary_tree_is_leaf(node->right);
 }
-return (0);
+return (1);
 }
