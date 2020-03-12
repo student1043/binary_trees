@@ -26,5 +26,5 @@ else
 return (rightdep + 1);
 }
 }
-return (leftdep);
+return (rightdep);
 }
