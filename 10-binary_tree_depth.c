@@ -2,11 +2,11 @@
 #include "binary_trees.h"
 
 /**
- * binary_tree_height - Entry point
+ * binary_tree_depth - Entry point
  * @tree: tree
  * Return: Always 0 (Success)
  */
-size_t binary_tree_height(const binary_tree_t *tree)
+size_t binary_tree_depth(const binary_tree_t *tree)
 {
 size_t leftdep = 0, rightdep = 0;
 if (!tree)
@@ -14,9 +14,9 @@ if (!tree)
 return (0);
 }
 if (tree->left)
-rightdep = binary_tree_height(tree->right);
+rightdep = binary_tree_depth(tree->right);
 if (tree->right)
-leftdep = binary_tree_height(tree->left);
+leftdep = binary_tree_depth(tree->left);
 if (leftdep > rightdep)
 {
 return (leftdep + 1);
