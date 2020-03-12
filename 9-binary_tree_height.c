@@ -22,9 +22,7 @@ if (leftdep > rightdep)
 return (leftdep + 1);
 }
 else
-{
 return (rightdep + 1);
-}
 }
 return (rightdep);
 }
