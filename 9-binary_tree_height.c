@@ -13,7 +13,9 @@ if (!tree)
 {
 return (0);
 }
+if (tree->left)
 rightdep = binary_tree_height(tree->right) + 1;
+if (tree->right)
 leftdep = binary_tree_height(tree->left) + 1;
 if (leftdep > rightdep)
 {
