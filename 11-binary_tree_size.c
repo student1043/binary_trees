@@ -14,6 +14,6 @@ return (0);
 }
 else
 {
-return(size(tree->left) + 1 + size(tree->right));
+return(binary_tree_size(tree->left) + 1 + binary_tree_size(tree->right));
 }
 }
