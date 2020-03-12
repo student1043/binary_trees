@@ -24,5 +24,5 @@ return (leftdep + 1);
 else
 return (rightdep + 1);
 }
-return (tree);
+return (leftdep);
 }
