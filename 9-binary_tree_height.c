@@ -19,7 +19,7 @@ leftdep = binary_tree_height(tree->left);
 rightdep = binary_tree_height(tree->right);
 if (leftdep < rightdep)
 {
-return (leftdep);
+return (leftdep + 1);
 }
 else
 return (rightdep + 1);
