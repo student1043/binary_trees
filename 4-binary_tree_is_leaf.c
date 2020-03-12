@@ -14,7 +14,7 @@ return (0);
 }
 if (!node->left && !node->right)
 {
-return (0);
+return (1);
 }
 if (node->left)
 {
@@ -24,5 +24,5 @@ if (node->right)
 {
 binary_tree_is_leaf(node->right);
 }
-return (1);
+return (0);
 }
