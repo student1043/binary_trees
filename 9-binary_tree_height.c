@@ -32,5 +32,5 @@ else
 max = rightdep;
 }
 }
-return (max + 1);
+return (max);
 }
