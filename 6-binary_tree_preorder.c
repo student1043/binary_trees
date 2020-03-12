@@ -13,6 +13,6 @@ if (!tree || !func)
 {
 return;
 }
-binary_tree_preorder(tree->left);
-binary_tree_preorder(tree->right);
+binary_tree_preorder(tree->left, func);
+binary_tree_preorder(tree->right, func);
 }
