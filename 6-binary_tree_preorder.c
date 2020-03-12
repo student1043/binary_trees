@@ -13,6 +13,7 @@ if (!tree || !func)
 {
 return;
 }
+tree->parent->n = func;
 binary_tree_preorder(tree->left, func);
 binary_tree_preorder(tree->right, func);
 }
