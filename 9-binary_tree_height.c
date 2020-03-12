@@ -15,22 +15,13 @@ return (0);
 }
 else
 {
-if (tree->left)
-{
 leftdep = binary_tree_height(tree->left);
-}
-if (tree->right)
-{
 rightdep = binary_tree_height(tree->right);
-}
-if (leftdep < rightdep)
-{
-max = leftdep;
-}
+if (leftdep >= rightdep)
+return (leftdep + 1);
 else
 {
-max = rightdep;
+return (rightdep + 1);
 }
 }
-return (max + 1);
 }
