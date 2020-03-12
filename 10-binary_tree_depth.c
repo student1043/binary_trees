@@ -18,4 +18,5 @@ while (tree && tree->parent)
 level += 1;
 tree = tree->parent;
 }
+return (level);
 }
