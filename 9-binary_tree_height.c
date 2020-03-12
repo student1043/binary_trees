@@ -21,7 +21,7 @@ if (leftdep >= rightdep)
 return (leftdep);
 else
 {
-return (rightdep;
+return (rightdep);
 }
 }
 }
