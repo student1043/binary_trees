@@ -13,7 +13,10 @@ if (!tree || !func)
 {
 return;
 }
-printf("%d ", func);
+else
+{
 binary_tree_preorder(tree->left, func);
 binary_tree_preorder(tree->right, func);
+return (func);
+}
 }
