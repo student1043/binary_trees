@@ -17,12 +17,6 @@ else
 {
 leftdep = binary_tree_height(tree->left);
 rightdep = binary_tree_height(tree->right);
-if (leftdep > rightdep)
-{
-return (leftdep + 1);
 }
-else
-return (rightdep + 1);
-}
-return (leftdep);
+return (max(leftdep, rightdep) + 1);
 }
