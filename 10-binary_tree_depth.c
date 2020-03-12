@@ -2,7 +2,7 @@
 #include "binary_trees.h"
 
 /**
- * binary_tree_depth - Entry point
+ * binary_tree_depths - Entry point
  * @tree: tree
  * Return: Always 0 (Success)
  */
@@ -13,13 +13,14 @@ if (!tree)
 {
 return (0);
 }
-if (tree->left)
 rightdep = binary_tree_depth(tree->right);
-if (tree->right)
 leftdep = binary_tree_depth(tree->left);
 if (leftdep > rightdep)
 {
 return (leftdep + 1);
 }
+else
+{
 return (rightdep + 1);
+}
 }
