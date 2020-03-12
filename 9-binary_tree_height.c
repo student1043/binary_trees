@@ -13,15 +13,11 @@ if (!tree)
 {
 return (0);
 }
-else
-{
 rightdep = binary_tree_height(tree->right) + 1;
 leftdep = binary_tree_height(tree->left) + 1;
 if (leftdep >= rightdep)
-return (leftdep);
-else
 {
+return (leftdep);
+}
 return (rightdep);
-}
-}
 }
