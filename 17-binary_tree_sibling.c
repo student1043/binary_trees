@@ -13,15 +13,18 @@ if (!node || !node->parent)
 {
 return (0);
 }
-if (node->right)
+if (node->left && node->right)
 {
-r = node->parent->left->n;
-return (r);
+r = node->right->n;
+l = node->left->n;
 }
 if (node->left)
 {
-l = node->parent->right->n;
-return (l);
+binary_tree_sibling(node->left);
+}
+if (node->right)
+{
+binary_tree_sibling(node->right);
 }
 return (0);
 }
