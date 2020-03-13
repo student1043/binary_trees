@@ -13,9 +13,7 @@ if (!tree)
 {
 return (0);
 }
-if (tree->left)
 rightheight = height(tree->right) + 1;
-if (tree->right)
 leftheight = height(tree->left) + 1;
 if (leftheight > rightheight)
 {
