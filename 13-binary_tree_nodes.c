@@ -8,15 +8,15 @@
  */
 size_t binary_tree_nodes(const binary_tree_t *tree)
 {
+size_t c;
 if (!tree)
 {
 return (0);
 }
-if (!tree->left && tree->right)
-return 1 + binary_tree_nodes(tree->right);
-else if (tree->left && !tree->right)
+c = binary_tree_nodes(tree->left) + binary_tree_nodes(tree->right);
+if (binary_tree_nodes(tree) == 1)
 {
-return 1 + binary_tree_nodes(tree->left);
+c++;
 }
-return (1);
+return (c);
 }
