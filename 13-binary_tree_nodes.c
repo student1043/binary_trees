@@ -12,9 +12,17 @@ if (!tree)
 {
 return (0);
 }
-if (!(tree->left) || !(tree->right))
+if (!tree->left && !tree->right)
 {
-return (0);
+return (1);
+}
+if (tree->left)
+{
+binary_tree_nodes(tree->left);
+}
+if (tree->right)
+{
+binary_tree_nodes(tree->right);
 }
 return 1 + binary_tree_nodes(tree->left) + binary_tree_nodes(tree->right);
 }
