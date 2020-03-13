@@ -2,6 +2,27 @@
 #include "binary_trees.h"
 
 /**
+ * height - Entry point
+ * @tree: tree
+ * Return: Always 0 (Success)
+ */
+size_t height(const binary_tree_t *tree)
+{
+size_t leftheight = 0, rightheight = 0;
+if (!tree)
+{
+return (0);
+}
+rightheight = height(tree->right) + 1;
+leftheight = height(tree->left) + 1;
+if (leftheight > rightheight)
+{
+return (leftheight);
+}
+return (rightheight);
+}
+
+/**
  * binary_tree_is_perfect - Entry point
  * @tree: tree
  * Return: Always 0 (Success)
@@ -20,13 +41,13 @@ if (!tree->left || !tree->right)
 {
 return (0);
 }
-int hl = binary_tree_is_perfect(tree->left) + 1;
-int hr = binary_tree_is_perfect(tree->right) + 1;
+int hl = height(tree->left);
+int hr = height(tree->right);
 if ((tree->left) && (tree->right))
 {
-if ((hl - hr) > 1)
+if (hl == hr)
 {
-return (1);
+return (binary_tree_is_perfect(tree->left) && binary_tree_is_perfect(tree->right));
 }
 }
 return (0);
