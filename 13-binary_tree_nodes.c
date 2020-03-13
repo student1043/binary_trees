@@ -18,4 +18,5 @@ else if (tree->left && !tree->right)
 {
 return 1 + binary_tree_nodes(tree->left);
 }
+return (1);
 }
