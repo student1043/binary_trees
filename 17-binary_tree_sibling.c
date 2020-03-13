@@ -8,19 +8,19 @@
  */
 binary_tree_t *binary_tree_sibling(binary_tree_t *node)
 {
-int r, l;
+int r = 0, l = 0;
 if (!node || !node->parent)
 {
 return (0);
 }
 if (node->right)
 {
-r = node->right->n;
+r = node->left->n;
 return (r);
 }
 if (node->left)
 {
-l = node->left->n;
+l = node->right->n;
 return (l);
 }
 return (0);
