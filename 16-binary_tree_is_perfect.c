@@ -33,14 +33,8 @@ if (!tree)
 {
 return (0);
 }
-else
-{
-int leftheight = height(tree->left);
-int rightheight = height(tree->right);
-if (leftheight - rightheight > 1 || rightheight - leftheight > 1)
-{
-return (1);
-}
-}
-return (0);
+return (!tree) ||
+(isHeightBalanced(tree->left) &&
+isHeightBalanced(tree->right) &&
+(height(tree->left) - height(tree->right)) <=1);
 }
