@@ -47,8 +47,8 @@ if ((tree->left) && (tree->right))
 {
 if (hl == hr)
 {
-return (binary_tree_is_perfect(tree->left) 
-        && binary_tree_is_perfect(tree->right));
+return (binary_tree_is_perfect(tree->left)
+            && binary_tree_is_perfect(tree->right));
 }
 }
 return (0);
