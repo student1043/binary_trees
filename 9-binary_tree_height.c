@@ -14,9 +14,9 @@ if (!tree || (!tree->right && !tree->left))
 return (0);
 }
 if (tree->left)
-rightheight = binary_tree_depth(tree->right) + 1;
+rightheight = binary_tree_height(tree->right) + 1;
 if (tree->right)
-leftheight = binary_tree_depth(tree->left) + 1;
+leftheight = binary_tree_height(tree->left) + 1;
 if (leftheight > rightheight)
 {
 return (leftheight);
