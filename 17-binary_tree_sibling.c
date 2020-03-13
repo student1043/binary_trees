@@ -15,12 +15,12 @@ return (0);
 }
 if (node->right)
 {
-r = node->left->n;
+r = node->parent->left->n;
 return (r);
 }
 if (node->left)
 {
-l = node->right->n;
+l = node->parent->right->n;
 return (l);
 }
 return (0);
