@@ -13,8 +13,5 @@ if (!tree)
 {
 return (0);
 }
-binary_tree_nodes(tree->left);
-c++;
-binary_tree_nodes(tree->right);
-return (c);
+return 1 + binary_tree_nodes(tree->left) + binary_tree_nodes(tree->right);
 }
