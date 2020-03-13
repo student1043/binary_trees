@@ -20,3 +20,16 @@ c++;
 }
 return (c);
 }
+
+/**
+ * binary_tree_nodes - Entry point
+ * @tree: tree
+ * Return: Always 0 (Success)
+ */
+size_t number_children(const binary_tree_t *tree)
+{
+int count = 0;
+if(tree->left) count++;
+if(tree->right) count++;       
+return count;
+}
