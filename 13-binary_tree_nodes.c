@@ -8,28 +8,13 @@
  */
 size_t binary_tree_nodes(const binary_tree_t *tree)
 {
-size_t c;
+size_t c = 0;
 if (!tree)
 {
 return (0);
 }
-c = binary_tree_nodes(tree->left) + binary_tree_nodes(tree->right);
-if (binary_tree_nodes(tree) == 1)
-{
+binary_tree_nodes(tree->left);
 c++;
-}
+binary_tree_nodes(tree->right);
 return (c);
-}
-
-/**
- * binary_tree_nodes - Entry point
- * @tree: tree
- * Return: Always 0 (Success)
- */
-size_t number_children(const binary_tree_t *tree)
-{
-int count = 0;
-if(tree->left) count++;
-if(tree->right) count++;       
-return count;
 }
