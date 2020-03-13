@@ -20,13 +20,13 @@ if (!tree->left || !tree->right)
 {
 return (0);
 }
-size_t hl = binary_tree_height(tree->left);
-size_t hr = binary_tree_height(tree->right);
+int hl = binary_tree_is_perfect(tree->left) + 1;
+int hr = binary_tree_is_perfect(tree->right) + 1;
 if ((tree->left) && (tree->right))
 {
-if (hl == hr)
+if ((hl - hr) > 1)
 {
-return (binary_tree_is_perfect(tree->left) && binary_tree_is_perfect(tree->right));
+return (0);
 }
 }
 return (0);
