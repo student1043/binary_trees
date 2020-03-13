@@ -19,5 +19,5 @@ return (1);
 }
 heightleft = binary_tree_balance(tree->left);
 heightright = binary_tree_balance(tree->right);
-return (heightleft - heightright - 1);
+return ((heightleft - heightright) - 1);
 }
