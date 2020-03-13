@@ -2,7 +2,7 @@
 #include "binary_trees.h"
 
 /**
- * binary_tree_nodes - Entry point
+ * binary_tree_balance - Entry point
  * @tree: tree
  * Return: Always 0 (Success)
  */
@@ -19,5 +19,5 @@ return (1);
 }
 heightleft = binary_tree_balance(tree->left);
 heightright = binary_tree_balance(tree->right);
-return (heightleft - heightright + 1);
+return (heightleft - heightright - 1);
 }
