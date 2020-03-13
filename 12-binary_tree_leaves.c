@@ -2,7 +2,7 @@
 #include "binary_trees.h"
 
 /**
- * binary_tree_size - Entry point
+ * binary_tree_leaves - Entry point
  * @tree: tree
  * Return: Always 0 (Success)
  */
