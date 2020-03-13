@@ -12,7 +12,7 @@ if (!tree)
 {
 return (0);
 }
-if (!binary_tree_nodes(tree->left) || !binary_tree_nodes(tree->right))
+if (!(tree->left) || !(tree->right))
 {
 return (0);
 }
