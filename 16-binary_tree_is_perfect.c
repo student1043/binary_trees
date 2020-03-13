@@ -33,8 +33,14 @@ if (!tree)
 {
 return (0);
 }
-return (!tree) ||
-(binary_tree_is_perfect(tree->left) &&
-binary_tree_is_perfect(tree->right) &&
-(binary_tree_depth(tree->left) - binary_tree_depth(tree->right)) <= 1);
+else
+{
+int leftheight = height(tree->left);
+int rightheight = height(tree->right);
+if (leftheight - rightheight > 1 || rightheight - leftheight > 1)
+{
+return (1);
+}
+}
+return (0);
 }
