@@ -34,7 +34,7 @@ if (!tree)
 return (0);
 }
 return (!tree) ||
-(isHeightBalanced(tree->left) &&
-isHeightBalanced(tree->right) &&
-(height(tree->left) - height(tree->right)) <=1);
+(binary_tree_is_perfect(tree->left) &&
+binary_tree_is_perfect(tree->right) &&
+(height(tree->left) - height(tree->right)) <= 1);
 }
