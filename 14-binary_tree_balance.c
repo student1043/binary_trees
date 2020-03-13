@@ -36,10 +36,6 @@ if (!tree)
 {
 return (0);
 }
-if (!tree->left && !tree->right)
-{
-return (1);
-}
 heightleft = height(tree->left);
 heightright = height(tree->right);
 return ((heightleft - heightright));
