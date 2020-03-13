@@ -17,7 +17,7 @@ if (!tree->left && !tree->right)
 {
 return (1);
 }
-heightleft = binary_tree_balance(tree->left) - 1;
+heightleft = binary_tree_balance(tree->left);
 heightright = binary_tree_balance(tree->right);
 return ((heightleft - heightright));
 }
